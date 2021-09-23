@@ -1,0 +1,695 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+
+}
+a {
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+      background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #445564;
+}
+
+/* MENU */
+header {
+    height: 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    justify-content: space-between;
+}
+nav {
+    width: 20%;
+    height: 50px;
+    margin: auto;
+    color: white;
+}
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+nav li {
+    list-style-type: none;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    transform: translateY(0);
+    transition: 0.4s;
+    background-color: #00000087;
+    color: #647179;
+}
+nav li:hover {
+    transform: translatey(7px);
+}
+.material-icons {
+    position: relative;
+    top: 10px;
+    font-size: 200%;
+    color: #647179;
+}
+
+/* HEADER */
+#header {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/Bordeaux.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    filter: brightness(0.5);
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    color: white;
+}
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box .span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+
+}
+.box .span:nth-child(1)
+{
+    transform:rotate(180deg);
+}
+.box .span:before
+{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background: black;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform:scaleX(0);
+        transform-origin: right;
+    }
+    50%
+    {
+        transform:scaleX(1);
+        transform-origin: right;
+    }
+    50.1%
+    {
+        transform:scaleX(1);
+        transform-origin: left;
+
+    }
+
+    100%
+    {
+        transform:scaleX(0);
+        transform-origin: left;
+
+    }
+
+
+}
+
+
+.fleche {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: black;
+}
+.down {
+    position: absolute;
+    top: 90%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: black;
+}
+.up {
+    position: absolute;
+    top: 90%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: black;
+}
+
+
+
+
+#page-4 {
+    height: 95vh;
+    width: 100%;
+    background-color: #04010e;
+}
+#page-4 p {
+    margin: 0;
+}
+
+
+.container {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    font-weight: 100;
+    font-size: 40px;
+    color: white;
+}
+.scroll {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+/*BLOC PROFIL*/
+#page-1 {
+    height: 95vh;
+    width: 100%;
+    background-image: url("../img/fonblanc.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+#page-1 p {
+    margin: 0;
+}
+.opacity {
+    position: absolute;
+    width: 100%;
+    background-color: #00000021;
+    height: 100%;
+}
+
+.moiphoto {
+    width: 100%;
+}
+#portrait {
+    position: relative;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    float: right;
+    top: 28%;
+    right: 13%;
+}
+.description {
+    position: relative;
+    float: left;
+    width: 40%;
+    top: 40%;
+    left: 10%;
+    line-height: 29px;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BLOC COMPETENCE */
+#page-2 {
+    height: 95vh;
+    width: 100%;
+    background-color: #04010e;
+}
+/*PLACEMENT*/
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.white {
+    color: white;
+}
+
+.details h4 {
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.details p {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 20px 0 20px;
+}
+
+
+
+.details a {
+    box-shadow: 0 0 10px blue;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    border: 1px solid black;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    position: relative;
+    top: 60px;
+    padding: 15px 30px;
+    
+}
+
+.details a:hover {
+    color: white;
+    background: black; 
+}
+
+/*CARD TOP*/
+
+#container {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    height: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#container .card {
+    position: relative;
+    width: 300px;
+    cursor: pointer;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: 1;
+    background: #fff;
+}
+
+.card:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    z-index: 2;
+    bottom: -2px;
+    background: #fff;
+    filter: blur(10px);
+}
+
+#container .card:nth-child(1):before,
+#container .card:nth-child(1):after {
+    background: linear-gradient(235deg,#89ff00,#010615,#00bcd4); 
+}
+#container .card:nth-child(2):before,
+#container .card:nth-child(2):after {
+    background: linear-gradient(
+235deg
+,#e400ff,#010615,#cfff00); 
+}
+#container .card:nth-child(3):before,
+#container .card:nth-child(3):after {
+    background: linear-gradient(235deg,#89ff00,#010615,#00bcd4); 
+}
+
+
+#container .card .name {
+    position: relative;
+    padding: 10px 0;
+    border: 2px solid #000;
+    text-align: center;
+    background-color: #fff;
+    z-index: 40;
+}
+#container .card .name h3 {
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #fff;
+}
+#container .card .details {
+    position: relative;
+    top: -2px;
+    text-align: center;
+    border: 2px solid #000;
+    margin-top: -2px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    height: 0;
+    z-index: 20;
+}
+#container .card:hover .details {
+    height: 316px;
+}
+
+#container .card:nth-child(1) .details {
+    background-color: #f1fffb;
+}
+
+#container .card:nth-child(1) .name {
+    background-color: #000;
+}
+
+#container .card:nth-child(2) .details {
+    background-color: #ffffe2;
+}
+
+#container .card:nth-child(2) .name {
+    background-color: #000;
+}
+
+#container .card:nth-child(3) .details {
+    background-color: #ffeeff;
+}
+
+#container .card:nth-child(3) .name {
+    background-color: #000;
+}
+
+
+
+
+/*CARD BOTTOM*/
+
+
+#container2 {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    height: 5%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#container2 .card {
+    position: relative;
+    width: 300px;
+    cursor: pointer;
+}
+
+#container2 .card .name {
+    position: relative;
+    padding: 10px 0;
+    border: 2px solid #000;
+    text-align: center;
+    background-color: #fff;
+    z-index: 40;
+}
+#container2 .card .name h3 {
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #fff;
+}
+#container2 .card .details {
+    position: relative;
+    top: -2px;
+    text-align: center;
+    border: 2px solid #000;
+    margin-top: -2px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    height: 0;
+    z-index: 20;
+}
+#container2 .card:hover .details {
+    height: 316px;
+}
+
+#container2 .card:nth-child(1) .details {
+    background-color: #f1fffb;
+}
+#container2 .card:nth-child(1) .name {
+    background-color: #000;
+}
+#container2 .card:nth-child(2) .details {
+    background-color: #ffffe2;
+}
+#container2 .card:nth-child(2) .name {
+    background-color: #000;
+}
+#container2 .card:nth-child(3) .details {
+    background-color: #ffeeff;
+}
+#container2 .card:nth-child(3) .name {
+    background-color: #000;
+}
+
+
+#container2 .card:nth-child(1):before,
+#container2 .card:nth-child(1):after {
+    background: linear-gradient(
+235deg
+,#e400ff,#010615,#cfff00); 
+}
+#container2 .card:nth-child(2):before,
+#container2 .card:nth-child(2):after {
+        background: linear-gradient(235deg,#89ff00,#010615,#00bcd4); 
+ 
+}
+#container2 .card:nth-child(3):before,
+#container2 .card:nth-child(3):after {
+   background: linear-gradient(
+235deg
+,#e400ff,#010615,#cfff00); 
+}
+
+/*VIDEO ANIMEJS*/
+
+video {
+    margin-top: 20px;
+}
+
+/* BLOC FORMATION ET EXPERIENCE */
+
+#page-3 {
+    height: 95vh;
+    width: 100%;
+    background-image: url("../img/fonblanc.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+}
+#page-3 p {
+    margin: 0;
+}
+
+/*CLIP-PATH LEFT*/
+
+.clipPathLeft {
+    width: 59.8%;
+    height: 922px;
+    clip-path: polygon(0 0, 100% 0, 62% 100%, 0% 100%);
+    position: absolute;
+    background: #d4d4d4;
+}
+
+.clipPathLeft:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    transition: 0.4s;
+    background: #04010e;
+}
+
+.clipPathLeft:hover:before {
+    top: 0%;
+}
+
+
+.titleStage {
+    width: 100%;
+    height: 922px;
+    clip-path: polygon(0 0, 100% 0, 62% 100%, 0% 100%);
+    position: absolute;
+    color: #04010e;
+    transition: 0.4s;
+}
+
+.titleStage:hover {
+    color: white;
+}
+
+.clipPathLeft h3 {
+    font-size: 100px;
+    text-align: center;
+    position: relative;
+    top: 90px;
+
+}
+
+.clipPathLeft p {
+    font-size: 32px;
+    color: #d4d4d4;
+    text-align: center;
+    position: relative;
+    top: 140px;
+    left: -60px;
+}
+
+.stage {
+    width: 100%;
+    height: 922px;
+    clip-path: polygon(0 0, 100% 0, 62% 100%, 0% 100%);
+    position: relative;
+    opacity: 0;
+}
+
+.clipPathLeft img {
+    width: 80%;
+    position: absolute;
+    top: 0;
+    opacity: 5%;
+}
+
+.stage:hover {
+    opacity: 1;
+}
+
+
+
+
+/*CLIP-PATH RIGHT*/
+
+.clipPathRight {
+    width: 63%;
+    height: 922px;
+    clip-path: polygon(36% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: relative;
+    right: -37%;
+    background: #04010e;
+}
+
+.clipPathRight:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    transition: 0.4s;
+    background: #d4d4d4;
+}
+
+.clipPathRight:hover:before {
+    top: 0%;
+}
+
+
+
+
+.clipPathRight p {
+    font-size: 32px;
+    color: #04010e;
+    text-align: center;
+    position: relative;
+    top: 140px;
+}
+
+
+.clipPathRight h3 {
+    font-size: 100px;
+    text-align: right;
+    position: relative;
+    top: 90px;
+    padding-right: 170px;
+}
+
+.transTitle {
+    width: 100%;
+    height: 922px;
+    clip-path: polygon(36% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: relative;
+    color: white;
+    transition: 0.4s;
+}
+
+.transTitle:hover {
+    color: #04010e;
+}
+
+.transP {
+    width: 100%;
+    height: 922px;
+    clip-path: polygon(36% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
